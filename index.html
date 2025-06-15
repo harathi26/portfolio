@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <div class="progress-bar"></div>
+    <nav id="desktop-nav">
+      <div class="logo">V. HARATHI</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">V. HARATHI</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="V. HARATHI profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">V. HARATHI</h1>
+        <p class="section__text__p2">Final-year B. Tech CSE Student</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/harathi-v-390339243/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/harathi26'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="about-flex-row">
+        <div class="section__pic-container">
+          <img
+        src="./assets/about-pic.png"
+        alt="Profile picture"
+        class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+        <div class="details-container">
+          <img
+            src="./assets/experience.png"
+            alt="Experience icon"
+            class="icon"
+          />
+          <h3>Education</h3>
+          <p>B.Tech in Computer Science<br />GITAM University, Bangalore (2021–2025)<br />CGPA: 8.21</p>
+        </div>
+        <div class="details-container">
+          <img
+            src="./assets/education.png"
+            alt="Education icon"
+            class="icon"
+          />
+          <h3>Intermediate</h3>
+          <p>Narayana Junior College (2019–2021)<br />88.3%</p>
+        </div>
+          </div>
+          <div class="text-container">
+        <p>
+          A passionate and dedicated final-year B. Tech student in Computer Science, driven by a strong desire to continuously learn and grow in the tech industry. I possess a solid foundation in DBMS, SQL, and Cryptography, along with strong problem-solving, communication, and collaborative skills. Eager to contribute to innovative projects, expand my expertise by learning from industry professionals, and make a meaningful impact in the evolving field of technology.
+        </p>
+          </div>
+        </div>
+      </div></div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project1.png"
+                alt="Secure Data Encryption System"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Secure Data Encryption System</h2>
+            <p>May 2024 - July 2024<br />AES, DES, RSA, BLOWFISH, SQL</p>
+            <p>Developed encryption system using multiple algorithms and SQL for key storage and data encryption.</p>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/harathi26/encryption-system')">
+                <img src="./assets/github.png" alt="GitHub" class="btn-icon" />
+                View on GitHub
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project2.png"
+                alt="Security Analysis of VANETS"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Security Analysis of VANETS</h2>
+            <p>Nov 2024 – Feb 2025<br />Network, VANETS, V2V, Hash, Digital Signature</p>
+            <p>Developed secure communication protocols for VANETs, implemented encryption, digital signatures, and validated via simulation.</p>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/harathi26/vanets-security')">
+                <img src="./assets/github.png" alt="GitHub" class="btn-icon" />
+                View on GitHub
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#skills'"
+      />
+    </section>
+    <section id="skills">
+      <p class="section__text__p1">Check Out My</p>
+      <h1 class="title">Skills & Certifications</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Technical Skills</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Skill icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Programming Languages</h3>
+                  <p>C, SQL, HTML, CSS, JavaScript, Python</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Skill icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Security & Cryptography</h3>
+                  <p>Cryptography, Network Security (Basics)</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Skill icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Database & Systems</h3>
+                  <p>DBMS</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Skill icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Concepts</h3>
+                  <p>OOPS (Basics), Secure Communication</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Certifications</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Certification icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>ISC2 CC Online Self–Paced Training</h3>
+                  <p>Network Security & Security Operations (2024)</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Certification icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>TCS ION Career Edge</h3>
+                  <p>Young Professional (2024)</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:vuppalapatiharathi26@gmail.com">vuppalapatiharathi26@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/harathi-v-390339243/">LinkedIn</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/github.png"
+            alt="GitHub icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://github.com/harathi26">GitHub</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/phone.png"
+            alt="Phone icon"
+            class="icon contact-icon"
+          />
+          <p>9392989297</p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2025 V. HARATHI. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
